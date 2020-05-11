@@ -1,0 +1,50 @@
+*{margin: 0;
+padding: 0;}
+.box{
+	width:1500px;
+	height: 550px;
+	margin:120px 215px;
+}
+.pic{
+	width:280px;
+	height: 300px;
+}
+.box img{
+	/*上，左右，下  ；   上下，左右，；  上，右，下，左      */
+	padding:10px 10px 10px;
+	background:rgb(204,229,138);
+	/*参数1：阴影向左移动像素，参数2：向下，参数3：虚化，参数4：颜色和透明度*/
+	box-shadow: 5px 5px 3px rgba(50,50,50,0.5);
+	transition: all 0.5s;
+}
+
+.pic1{
+	//设置旋转 顺时针正值逆时针负值 单位beg  transform可以缩放可以旋转可以移动
+	transform:rotate(5deg) ;
+}
+.pic2{
+	transform: rotate(-16deg);
+}
+.pic3{
+	transform: rotate(10deg);
+}
+.pic4{
+	transform: rotate(8deg);
+}
+.pic5{
+	transform: rotate(-5deg);
+}
+.pic6{
+	transform: rotate(5deg);
+}
+.pic7{
+	transform: rotate(-7deg);
+}
+.pic8{
+	transform: rotate(4deg);
+}
+.box img:hover{
+	/*设置旋转角度为0 放大1.2倍*/
+	transform: rotate(0deg) scale(1.2);
+	
+}

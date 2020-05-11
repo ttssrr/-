@@ -1,0 +1,50 @@
+#banner{
+	width: 820px;
+	height: 610px;
+	/*margin-top:180px;
+	margin-left: 150px;*/
+	position: absolute; bottom: 75px; left: 120px;
+	overflow: hidden;
+}
+.bannerimg{
+	/*五张图片显示在横着的连接区域*/
+	width:4100px;
+	height:560px;
+	float: left;
+	/*使图片的切换效果平滑显示*/
+	transition: all 1s;
+}
+.bannerimg li{
+	/*每张图片的宽度在div中显示，设置为和div宽度一样*/
+	width:820px;
+	height: 560px;
+	float: left;
+}
+.bannerimg li img{
+	width:820px;
+	height: 560px;
+}
+.bannernav{
+	width: 820px;
+	height: 55px;
+	float: left;
+	margin-left: 3px;
+}
+.bannernav li{
+	height: 55px;
+	/*border-left: 1px solid whitesmoke;*/
+	text-align: center;
+	line-height: 55px;
+	float: left;
+}
+.bannernav li a{
+	background:rgb(151,160,81);
+	width: 163px;
+	height: 55px;
+	display: block;
+	color:white;
+}
+.bannernav .now{
+	/*background: #998844;*/
+	color:black;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style type="text/css">
+        body{
+	    		background-image: url(img/bg7.jpg);
+	    	    background-repeat: no-repeat;
+	    	    background-size: 110%;
+	    	}
+	    video{
+	    	width: 900px;
+	    	height: 600px;
+	    	margin-top: 140px;
+	    	margin-left: 685px;
+	    	}
+	    button{
+	    	width:100px;
+	    	height:35px;
+	    	margin-left: 688px;
+	    	background-color:whitesmoke;
+	    	color: black;
+	    }
+	    .fanhui{
+	    		position:absolute; top:40px; right:55px;
+	    	}
+	    .fanhui a{
+	    		text-decoration: none;
+	    		color: #777;
+	    		font-size: 15px;
+	    	}
+	    .fanhui a:hover{
+	    		text-decoration: none;
+	    		color: #000000;
+	    		font-size: 15px;
+	    	}
+        </style>
+	</head>
+	<body>
+	<h1 align="center">汉语，我们的文化自信！！</h1>
+	<video width="800" height="" id="video">
+		<source src="wh.mp4" type="video/mp4"></source>
+	</video>
+	<br />
+	<button onclick="bofang()">播放</button>
+	<button onclick="zanting()">暂停</button>
+	<script type="text/javascript">
+		//获取对应的video标签
+		var video=document.getElementById('video');
+		//播放方法
+		function bofang(){
+			video.play();
+		}
+		//暂停方法
+		function zanting(){
+			video.pause();
+		}
+		</script>
+		<div class="fanhui">
+			<a href="wh_first.html"><首页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="wh_second.html"><返回</a>
+		</div>
+	</body>
+</html>
